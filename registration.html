@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration</title>
+</head>
+<style>
+    input[type=text],
+    select {
+        width: 60%;
+        padding: 10px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type=submit] {
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+
+    div {
+        width: 60%;
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        margin: 0 auto;
+    }
+</style>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li> <a href="employee.php">Employee</a></li>
+        </ul>
+        <ol>
+            <li> <a href="registration.html">Register</a></li>
+        </ol>
+    </nav>
+    <h1>Registration Form</h1>
+    <div>
+        <form action="registration.php" method="POST">
+            <table>
+                <tr>
+                    <td><label style="font-weight: bold;">ID No.</label></td>
+                    <td><input type="text" name="id" placeholder="Id..." r></td>
+                </tr>
+                <tr>
+                    <td><label style="font-weight: bold;">Name</label></td>
+                    <td><input type="text" name="name" placeholder="Your name..." r></td>
+                </tr>
+                <tr>
+                    <td><label style="font-weight: bold;">Designation</label></td>
+                    <td><input type="text" name="designation" placeholder="designation.." r></td>
+                </tr>
+                <tr>
+                    <td><label style="font-weight: bold;">Date of Birth</label></td>
+                    <td><input type="date" name="birth" placeholder="Date of Birth..." r></td>
+                </tr>
+                <tr>
+                    <td><label style="font-weight: bold;">Salary</label></td>
+                    <td><input type="number" name="salary" placeholder="Your salary..." r></td>
+                </tr>
+                <tr>
+                    <td><label style="font-weight: bold;">Date of Join</label></td>
+                    <td><input type="date" name="date_join" placeholder="Date of Join..." r></td>
+                </tr>
+                <tr>
+                    <td><label>Specialization</label></td>
+                    <td>
+                        <select name="specialization">
+                            <option value="Artificial Intelligence">Artificial Intelligence</option>
+                            <option value="Computer Science">Computer Science</option>
+                            <option value="Software Engineer">Software Engineer</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+
+            <input name="reg_emp" type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>

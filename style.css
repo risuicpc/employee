@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    background-color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    align-content: center;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0 0 0 20px;
+    display: flex;
+    list-style: none;
+    flex: 1;
+}
+
+nav ol {
+    margin: 0;
+    padding: 0 20px 0 0;
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin: 0;
+    padding: 0;
+    align-self: center;
+}
+
+nav  li a {
+    height: 40px;
+    padding: 0 5px;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+nav li a:hover {
+    background-color: white;
+    color: black
+}
+
+table {
+    width: 100%;
+}
